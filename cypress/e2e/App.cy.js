@@ -31,7 +31,7 @@ describe("should render app", () => {
     cy.visit("http://localhost:3001");
     cy.get("[data-cy=search-input]")
       .should("be.visible")
-      .type("flight")
+      .type("flight").click()
       .should("have.value", "flight");
   });
 });
