@@ -4,14 +4,18 @@ import styled from "styled-components";
 
 const TextField = styled(DebounceInput)`
   font-size: 1.3rem;
-  padding: 1em;
+  font-weight:bold;
+  padding: 1rem;
   border-radius: 0.5rem;
-  color: gray;
+  color: darkgray;
   font-weight: 400;
   outline: none;
-  border: 4px solid lightgrey;
+  border: 4px solid gold;
   margin-bottom: 1em;
   font-family: "Indie Flower", cursive;
+  &:focus{
+    background-color: rgb(200, 255,240)
+  }
 `;
 
 const Input = ({ query, onChange }) => {
