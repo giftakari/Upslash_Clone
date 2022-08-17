@@ -23,6 +23,7 @@ const Input = ({ query, onChange }) => {
         placeholder="Search Awesome Images..."
         value={query}
         onChange={(event) => onChange(event)}
+        data-cy="search-input"
       />
     </>
   );
